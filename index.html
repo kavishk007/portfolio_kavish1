@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavish Kala | UI/UX Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav class="navbar">
+        <div class="logo"><img src="https://i.ibb.co/6gBbZ8h/alexa-logo.webp" alt="Logo" /></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hi!, I am Kavish</h1>
+            <p>UI/UX Developer | Crafting Digital Experiences</p>
+            <a href="#portfolio" class="cta-btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.ibb.co/cTVbnPj/pfp-kavish.jpg" alt="Kavish Kala">
+        </div>
+    </div>
+</header>
+
+<!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kavish Kala, a passionate UI/UX developer focused on designing and creating engaging digital experiences. With a background in web and app development, I aim to bridge the gap between users and the digital world. My approach is user-centered, ensuring that every design is intuitive and visually appealing.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>My Skills</h2>
+    <div class="services-container">
+        <div class="service-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888867.png" alt="App Design" class="skill-icon"/>
+            <h3>App Design</h3>
+        </div>
+        <div class="service-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Website Design" class="skill-icon"/>
+            <h3>Website Design</h3>
+        </div>
+        <div class="service-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="HTML & CSS" class="skill-icon"/>
+            <h3>HTML & CSS</h3>
+        </div>
+        <div class="service-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732245.png" alt="Logo Design" class="skill-icon"/>
+            <h3>Logo Design</h3>
+        </div>
+    </div>
+    <a href="#portfolio" class="read-more-btn">Read More</a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for any project or collaboration opportunities!</p>
+    <ul class="contact-info">
+        <li>Email: <a href="mailto:kavish@example.com">kavish@example.com</a></li>
+        <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+        <li>GitHub: <a href="https://github.com/kavishkala" target="_blank">github.com/kavishkala</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/kavishkala" target="_blank">linkedin.com/in/kavishkala</a></li>
+    </ul>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- Smooth scrolling with JavaScript (optional for enhanced control) -->
+<script>
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
